@@ -1,13 +1,15 @@
 */
 !/i3/
-!/nnn/
+!/ranger/
+!/htop/
 !/nvim/
 !/picom/
 !/polybar/
 !/rofi/
 !/wezterm/
 !/i3/**
-!/nnn/**
+!/ranger/**
+!/htop/**
 !/nvim/**
 !/picom/**
 !/polybar/**
@@ -17,3 +19,4 @@ mimeapps.list
 user-dirs.dirs
 user-dirs.locale
 /polybar/config.ini
+/ranger/plugins

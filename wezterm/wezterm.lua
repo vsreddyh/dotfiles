@@ -9,7 +9,7 @@ config = {
 	window_decorations = "RESIZE",
 	default_cursor_style = "BlinkingBar",
 	color_scheme="Nord (Gogh)",
-	font = wezterm.font("MesloLGM Nerd Font"),
+	font = wezterm.font_with_fallback({"MesloLGM Nerd Font","Noto Color Emoji"}),
 	font_size = 16,
 	background = {
 		{
