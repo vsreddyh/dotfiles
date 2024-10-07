@@ -12,7 +12,7 @@ if ! i3-msg -t get_workspaces | grep -q '"num":6'; then
 
     # Launch obsidian in the top-right for viewing
     i3-msg "exec obsidian.sh"
-	sleep 1
+	sleep 2 #sleep needs to be greater than 1 for size reduction. reason:- dk. guess:-time needed to focus on container(dumb but the only viable reason)
 	#make obsidian smaller
 	i3-msg "resize shrink width 600 px"
 else

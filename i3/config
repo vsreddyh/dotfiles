@@ -190,11 +190,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+n workspace 10; exec --no-startup-id nemo
+bindsym $mod+n exec --no-startup-id wezterm -e ranger
+bindsym $mod+Shift+n workspace 10;exec --no-startup-id nemo
 bindsym $mod+z exec --no-startup-id ~/.config/i3/power_menu.sh
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 # Open GNOME System Monitor with Ctrl+Shift+Esc on workspace 9
-bindsym Control+Shift+Escape workspace 10; exec --no-startup-id gnome-system-monitor
+bindsym Control+Shift+Escape workspace 10; exec --no-startup-id wezterm -e htop
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
