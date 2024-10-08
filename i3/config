@@ -29,6 +29,11 @@ exec --no-startup-id picom
 #bg
 exec_always feh --bg-scale ./.config/i3/wallpaper.jpg
 
+#screenkey
+exec_always killall screenkey
+exec_always --no-startup-id screenkey
+
+
 #polybar
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
