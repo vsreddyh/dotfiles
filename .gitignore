@@ -20,3 +20,4 @@ user-dirs.dirs
 user-dirs.locale
 /polybar/config.ini
 /ranger/plugins
+QtProject.conf

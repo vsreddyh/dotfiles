@@ -190,7 +190,7 @@ type = internal/battery
 #format-prefix = "BAT "
 #format-prefix-foreground = ${colors.primary}
 full-at = 100
-label-charging=%percentage%(%time%)
+label-charging=%percentage%%(%time%)
 format-charging = ⚡<animation-charging> <label-charging>
 animation-charging-0 = 
 animation-charging-1 = 
@@ -200,7 +200,7 @@ animation-charging-4 = 
 ; Framerate in milliseconds
 animation-charging-framerate = 750
 animation-charging-foreground = ${colors.peach}
-label-discharging=%percentage%(%time%)
+label-discharging=%percentage%%(%time%)
 format-discharging = <ramp-capacity> <label-discharging>
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -253,7 +253,7 @@ label-foreground = ${colors.primary}
 
 [module/github]
 type = internal/github
-token = GITHUB_ACCESS_TOKEN
+#token = GITHUB_ACCESS_TOKEN
 interval = 10
 user = vsreddyh
 empty-notifications = true
