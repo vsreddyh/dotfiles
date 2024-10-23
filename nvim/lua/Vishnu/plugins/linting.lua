@@ -18,7 +18,7 @@ return {
 			java = { "checkstyle" },
 			c = { "cpplint" },
 			cpp = { "cpplint" },
-			bash = { "shellcheck" },
+			sh = { "shellcheck" },
 		}
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 

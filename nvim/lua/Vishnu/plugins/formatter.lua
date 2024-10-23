@@ -18,7 +18,7 @@ return {
 				java = { "google-java-format" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
-				bash = { "shfmt" },
+				sh = { "shfmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
