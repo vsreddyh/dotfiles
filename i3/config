@@ -202,7 +202,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+n exec --no-startup-id wezterm -e ranger
+bindsym $mod+n workspace 10;exec --no-startup-id wezterm -e ranger
 bindsym $mod+Shift+n workspace 10;exec --no-startup-id nemo
 bindsym $mod+z exec --no-startup-id ~/.config/i3/power_menu.sh
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
