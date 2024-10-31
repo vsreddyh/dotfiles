@@ -8,8 +8,8 @@ config = {
 	window_close_confirmation = "NeverPrompt",
 	window_decorations = "RESIZE",
 	default_cursor_style = "BlinkingBar",
-	color_scheme="Nord (Gogh)",
-	font = wezterm.font_with_fallback({"MesloLGM Nerd Font","Noto Color Emoji"}),
+	color_scheme = "Nord (Gogh)",
+	font = wezterm.font_with_fallback({ "MesloLGM Nerd Font", "Noto Color Emoji" }),
 	font_size = 16,
 	background = {
 		{
@@ -21,16 +21,15 @@ config = {
 			},
 			width = "100%",
 			height = "100%",
-			opacity = 0.5,
-		}
+			opacity = 0.7,
+		},
 	},
 	window_padding = {
 		left = 3,
 		right = 3,
 		bottom = 3,
 		top = 3,
-	}
+	},
 }
 
 return config
-

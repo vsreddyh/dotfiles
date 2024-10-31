@@ -137,7 +137,7 @@ label = %title:0:60:...%
 
 [module/filesystem]
 type = internal/fs
-interval = 25
+interval = 60
 mount-0= /
 format-mounted-prefix="DISK "
 format-mounted-prefix-foreground = ${colors.primary}
@@ -189,7 +189,7 @@ label = %percentage:%%
 type = internal/battery
 #format-prefix = "BAT "
 #format-prefix-foreground = ${colors.primary}
-full-at = 100
+full-at = 90
 label-charging=%percentage%%(%time%)
 format-charging = ⚡<animation-charging> <label-charging>
 animation-charging-0 = 
@@ -207,7 +207,7 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-low-at = 0
+low-at = 20
 battery = BAT0
 adapter = ACAD
 poll-interval = 5
@@ -216,7 +216,7 @@ poll-interval = 5
 type = internal/network
 interface=wlp0s20f3
 interface-type = wireless
-interval = 2
+interval = 10
 label-connected = %essid% %downspeed%🔽 %upspeed%🔼
 format-connected = <ramp-signal> <label-connected>
 ramp-signal-0 = 😱
@@ -244,7 +244,7 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 
 [module/date]
 type = internal/date
-interval = 1
+interval = 60
 date = %Y-%m-%d %H:%M
 date-alt = %Y-%m-%d %H:%M:%S
 
@@ -253,8 +253,8 @@ label-foreground = ${colors.primary}
 
 [module/github]
 type = internal/github
-#token = GITHUB_ACCESS_TOKEN
-interval = 10
+token = GITHUB_ACCESS_TOKEN
+interval = 1800
 user = vsreddyh
 empty-notifications = true
 format-prefix="GITHUB "
