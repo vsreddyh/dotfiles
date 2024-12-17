@@ -19,6 +19,8 @@ return {
 			c = { "cpplint" },
 			cpp = { "cpplint" },
 			sh = { "shellcheck" },
+			yaml = { "yamllint" },
+			yml = { "yamllint" },
 		}
 		eslint.args = {
 			"--no-warn-ignored", -- <-- this is the key argument

@@ -1,20 +1,27 @@
-
 #!/bin/bash
 
-options="Albion Online\nThe Pirate:Carrabien Hunt\nSteam"
+options="Albion Online
+The Pirate:Caribbean Hunt
+ClusterTruck
+Steam"
+
 i3-msg "workspace 4"
-choice=$(echo $options | rofi -dmenu -i -p "Games List")
+choice=$(echo "$options" | rofi -dmenu -i -p "Games List")
+
 case $choice in
-    "Albion Online")
-        ./Games/launcher/Albion-Online
-        ;;
-    "The Pirate:Caribbean Hunt")
-        steam steam://rungameid/512470
-        ;;
-    "Steam")
-        steam
-        ;;
-	*)
-        exit 1
-        ;;
+"Albion Online")
+	./Games/launcher/Albion-Online
+	;;
+"ClusterTruck")
+	./Games/clustertruck/Clustertruck/start.sh
+	;;
+"The Pirate:Caribbean Hunt")
+	steam steam://rungameid/512470
+	;;
+"Steam")
+	steam
+	;;
+*)
+	exit 1
+	;;
 esac

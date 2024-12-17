@@ -15,10 +15,12 @@ return {
 				markdown = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				java = { "google-java-format" },
+				java = { "clang-format" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
 				sh = { "shfmt" },
+				yaml = { "prettier" },
+				yml = { "prettier" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
