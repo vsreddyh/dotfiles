@@ -24,7 +24,7 @@ case $choice in
 	steam
 	;;
 "Hearts Of Iron IV")
-	./home/vishnu/Games/HOI4/HeartsOfIronIV/HeartsOfIronIV/start.sh
+	./Games/HOI4/HeartsOfIronIV/HeartsOfIronIV/start.sh
 	;;
 *)
 	exit 1
