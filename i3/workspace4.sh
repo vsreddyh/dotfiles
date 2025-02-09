@@ -3,7 +3,9 @@
 options="Albion Online
 The Pirate:Caribbean Hunt
 ClusterTruck
-Steam"
+Steam
+Hearts Of Iron IV
+"
 
 i3-msg "workspace 4"
 choice=$(echo "$options" | rofi -dmenu -i -p "Games List")
@@ -20,6 +22,9 @@ case $choice in
 	;;
 "Steam")
 	steam
+	;;
+"Hearts Of Iron IV")
+	./home/vishnu/Games/HOI4/HeartsOfIronIV/HeartsOfIronIV/start.sh
 	;;
 *)
 	exit 1
