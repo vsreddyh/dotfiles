@@ -7,6 +7,11 @@
 !/polybar/
 !/rofi/
 !/wezterm/
+!/dunst/
+!/thefuck/
+!/warner/
+!/waerner/**
+!/thefuck/**
 !/i3/**
 !/ranger/**
 !/htop/**
@@ -15,6 +20,7 @@
 !/polybar/**
 !/rofi/**
 !/wezterm/**
+!/dunst/**
 mimeapps.list
 user-dirs.dirs
 user-dirs.locale

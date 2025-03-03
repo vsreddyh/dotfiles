@@ -33,6 +33,8 @@ exec_always feh --bg-scale ./.config/i3/wallpaper.jpg
 exec_always killall screenkey
 exec_always --no-startup-id screenkey
 
+#warner
+exec --no-startup-id warner start &
 
 #polybar
 exec_always killall polybar
