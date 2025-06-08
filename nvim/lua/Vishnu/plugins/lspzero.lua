@@ -39,7 +39,6 @@ return {
 
 			-- Setting up nvim-cmp with LuaSnip
 			local cmp = require("cmp")
-			local lsp_zero = require("lsp-zero")
 			local cmp_action = lsp_zero.cmp_action()
 			local luasnip = require("luasnip")
 

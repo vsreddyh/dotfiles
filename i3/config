@@ -40,6 +40,11 @@ exec --no-startup-id warner start &
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
+#neko
+##exec_always killall neko
+##exec_always --no-startup-id ~/go/bin/neko -quiet -scale 1.5
+##for_window [class="Neko"] move to workspace back_and_forth
+##for_window [class="Neko"] sticky enable
 
 ##mute on opening
 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
@@ -62,11 +67,14 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+#Modifying power button
+bindsym XF86PowerOff exec --no-startup-id notify-send "Power Button Pressed"
+
 # Increase brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 10%+
 
 # Decrease brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -156,7 +164,7 @@ bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 exec --no-startup-id ~/.config/i3/workspace3.sh #Thunderbird
 bindsym $mod+4 exec --no-startup-id ~/.config/i3/workspace4.sh #Games
 bindsym $mod+5 exec --no-startup-id ~/.config/i3/workspace5.sh #zen
-bindsym $mod+6 workspace number $ws6
+bindsym $mod+6 exec --no-startup-id ~/.config/i3/workspace6.sh #Ticktick
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 exec --no-startup-id ~/.config/i3/workspace9.sh #spotify
@@ -212,7 +220,6 @@ bindsym $mod+n workspace 10;exec --no-startup-id wezterm -e ranger
 bindsym $mod+Shift+n workspace 10;exec --no-startup-id nemo
 bindsym $mod+z exec --no-startup-id ~/.config/i3/power_menu.sh
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
-# Open GNOME System Monitor with Ctrl+Shift+Esc on workspace 9
 bindsym Control+Shift+Escape workspace 10; exec --no-startup-id wezterm -e htop
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

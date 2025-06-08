@@ -14,7 +14,7 @@ return {
 				json = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = { "black" },
 				java = { "clang-format" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
